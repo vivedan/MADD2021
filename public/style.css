@@ -154,11 +154,11 @@ html {
 }
 
 .circleLeft{
-  padding-right: 40vw;
+  padding-right: 45vw;
 }
 
 .circleRight{
-  padding-left: 40vw;
+  padding-left: 45vw;
 }
 
 .circlesFront{
@@ -204,13 +204,13 @@ html {
   position:relative;
   z-index: 2999;
   width: 60%;
-  height: auto;
+  /*height: auto;*/
   padding-bottom: 20px;
 }
 
 #enterDescription{
   width: 80%;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   line-height: 17px;
   padding-bottom: 20px;
   text-align: justify;
