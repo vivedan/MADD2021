@@ -1,8 +1,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>PH706 - The party</title>
-    <meta name="description" content="PH706 - An immersive neo-party" />
+    <title>LIDGO Lounge</title>
+    <meta name="description" content="LIDGO Lounge" />
 
     <link
       rel="shortcut icon"
@@ -43,6 +43,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
     <meta
       name="viewport"
@@ -139,7 +142,7 @@
             
             <img
               id="posterClub"
-              src="https://cdn.glitch.com/3caaeeee-606a-4efa-b25c-25fd7df67760%2FPH706%20posters%20reduced%20more-01.jpg?v=1594394884850"
+              src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2FMADDposter.jpeg?v=1613330269798"
               crossorigin="anonymous"
             />
             
@@ -252,9 +255,9 @@
 
             <audio
               id="music1"
-              src="https://cdn.glitch.com/3caaeeee-606a-4efa-b25c-25fd7df67760%2Ftribal%20tessellation%20-%20Santra_redux4.mp3?v=1594466148569"
+              src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Flounge%20music.mp3?v=1613399311947"
             ></audio>
-            <audio
+            <!--<audio
               id="music2"
               src="https://cdn.glitch.com/3caaeeee-606a-4efa-b25c-25fd7df67760%2FApril-Xanadu_redux2.mp3?v=1594466006077"
             ></audio>
@@ -269,7 +272,7 @@
             <audio
               id="musicentrance"
               src="https://cdn.glitch.com/83db13bb-2e50-4db4-ae15-d23dcb891201%2F208516__frankum__entrancemod.mp3?v=1592321706740"
-            ></audio>
+            ></audio>-->
           </a-assets>
 
           <a-entity
@@ -325,7 +328,7 @@
           ></a-entity>
 
           <a-sky
-            src="#sky"
+            
             rotation="0 -90 0"
             segments-height="10"
             segments-width="16"
@@ -386,7 +389,7 @@
               rotation="90 0 0"
               side="double"
               open-ended="true"
-              color="black"
+              color="#113d58"
               segments-height="1"
             ></a-cylinder>
 
@@ -402,7 +405,7 @@
             ></a-cylinder>
 
             <a-entity
-              text="value: ENJOY THE PARTY!; width: 10; color: white; align: center"
+              text="value: WELCOME TO THE LOUNGE!\nMusic by Muted Affair; width: 10; color: white; align: center"
               position="0 6 0.8"
             ></a-entity>
 
@@ -411,9 +414,9 @@
               scale="10 0.5 10"
               rotation="90 0 0"
               visible="false"
-              sound="src: #musicentrance; 
+              sound="src: #music1; 
                     autoplay: true;
-                    volume: 1;
+                    volume: 0.2;
                     loop: true;
                     refDistance: 30;
                     rolloffFactor: 10"
@@ -430,7 +433,7 @@
               animation="property: components.material.material.emissiveIntensity; from: 0; to: 5; dur: 10000; loop: true; dir: alternate; enabled: true"
             ></a-cylinder>
             <a-entity
-              text="value: You are muted by default, unmute yourself to talk to your friends; width: 10; color: white; align: center"
+              text="value: You are muted by default, unmute yourself to talk to other users; width: 10; color: white; align: center"
               position="0 6 20.8"
             ></a-entity>
 
@@ -461,7 +464,7 @@
               position="0 7 90"
               scale="10 0.5 10"
               rotation="90 0 0"
-              color="black"
+              color="#113d58"
               side="double"
               segments-height="1"
             ></a-cylinder>
@@ -475,7 +478,7 @@
               rotation="90 0 0"
               side="double"
               open-ended="true"
-              color="black"
+              color="#113d58"
               segments-height="1"
             ></a-cylinder>
 
@@ -494,9 +497,9 @@
               scale="10 0.5 10"
               rotation="90 0 0"
               visible="false"
-              sound="src: #musicentrance; 
+              sound="src: #music1; 
                     autoplay: true;
-                    volume: 1;
+                    volume: 0.4;
                     loop: true;
                     refDistance: 30;
                     rolloffFactor: 10"
@@ -538,7 +541,7 @@
             <a-entity>
               <a-entity
                 id="centerPiece"
-                gltf-model="https://cdn.glitch.com/83db13bb-2e50-4db4-ae15-d23dcb891201%2Fravecartel1.glb?v=1590784612437"
+                gltf-model="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Fbanner.glb?v=1613329554211"
                 scale="1 1 1"
                 rotation="0 0 0"
                 position="0 9 -10"
@@ -625,18 +628,18 @@
               animation__2="property: components.material.material.emissiveIntensity; from: 0; to: 20; dur: 10000; loop: true; dir: alternate"
             ></a-box>
 
-            <a-sphere
+            <!--<a-sphere
               radius="30"
               position="0 5 -10"
               visible="false"
-              sound="src: #center1; 
+              sound="src: #music1; 
                     autoplay: true;
                     volume: 1;
                     loop: true;
                     refDistance: 20;
                     rolloffFactor: 10"
             >
-            </a-sphere>
+            </a-sphere>-->
           </a-entity>
 
           <!--1-->
@@ -721,7 +724,7 @@
               visible="false"
               sound="src: #music1; 
                     autoplay: true;
-                    volume: 1;
+                    volume: 0.4;
                     loop: true;
                     refDistance: 20;
                     rolloffFactor: 10"
@@ -751,7 +754,7 @@
               material="shader: gif; src: url(https://media.giphy.com/media/SJmXCNIzH7FuJyhptM/giphy.gif); opacity: 0.5;"
             ></a-plane>
             
-            <a-image src="#posterSantra" width="7.4" height="10" position="-20 13 -28.5" rotation="0 110 0"></a-image>
+            <!--<a-image src="#posterSantra" width="7.4" height="10" position="-20 13 -28.5" rotation="0 110 0"></a-image>-->
             
           </a-entity>
 
@@ -872,9 +875,9 @@
               radius="30"
               position="0 5 -10"
               visible="false"
-              sound="src: #music2; 
+              sound="src: #music1; 
                     autoplay: true;
-                    volume: 1;
+                    volume: 0.4;
                     loop: true;
                     refDistance: 20;
                     rolloffFactor: 10"
@@ -903,7 +906,7 @@
               rotation="-90 0 0"
               material="shader: gif; src: url(https://media.giphy.com/media/l9UZwz7fhHzkJkAqJ7/giphy.gif); opacity: 0.5;"
             ></a-plane>
-            <a-image src="#posterApril" width="7.4" height="10" position="20 13 -28.5" rotation="0 -110 0"></a-image>
+            <!--<a-image src="#posterApril" width="7.4" height="10" position="20 13 -28.5" rotation="0 -110 0"></a-image>-->
           </a-entity>
 
           <!--3-->
@@ -986,9 +989,9 @@
               radius="30"
               position="0 5 -10"
               visible="false"
-              sound="src: #music3; 
+              sound="src: #music1; 
                     autoplay: true;
-                    volume: 1;
+                    volume: 0.4;
                     loop: true;
                     refDistance: 20;
                     rolloffFactor: 10"
@@ -1017,7 +1020,7 @@
               rotation="-90 0 0"
               material="shader: gif; src: url(https://media.giphy.com/media/xUPGclQpYBf08HmIIE/giphy.gif); opacity: 0.5;"
             ></a-plane>
-            <a-image src="#posterMia" width="7.4" height="10" position="-24 13 10" rotation="0 90 0"></a-image>
+            <!--<a-image src="#posterMia" width="7.4" height="10" position="-24 13 10" rotation="0 90 0"></a-image>-->
           </a-entity>
 
           <!-- EXIT -->
@@ -1055,14 +1058,30 @@
           </a-entity>
         </a-scene>
       </div>
+      
+      <div id="enterLandscape">
+        <img
+            id="landscapeIcon"
+            class="landscapeIcon" 
+            src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Flandscape%20mode-icon.png?v=1613385124482"
+            crossorigin="anonymous"
+          />
+        <p id="landscapeOrder">
+          Please change the direction<br>of your device to landscape mode.
+        </p>
+      </div>
+      
 
       <div id="ingameUItop">
         <!--<button id="myButton">Mute!</button> -->
         <div id="topLeft">
+          <div class="ingameIcon" id="muteBack">
+            
+          </div>
           <img
             class="ingameIcon"
             id="muteIcon"
-            src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ficon-unmute.png?v=1592505881505"
+            src="https://cdn.glitch.com/f44e7d0f-6299-4434-a136-b24515e92365%2Fmaikefeng-jingyin-2.png?v=1603802144461"
             crossorigin="anonymous"
           />
           <button class="UIbutton" id="myButton" onclick="toggleMic()">
@@ -1071,7 +1090,7 @@
           <img
             class="ingameIcon"
             id="bottopIcon"
-            src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ficon-bot.png?v=1592505881199"
+            src="https://cdn.glitch.com/b82bb398-3ada-4af4-8aa4-d21adf3a10b0%2F%E7%BC%96%E7%BB%84%209.png?v=1609587718016"
             crossorigin="anonymous"
           />
           <input
@@ -1083,12 +1102,27 @@
           <button class="UIbutton" id="changeButton" onclick="changeUsername()">
             Change Username
           </button>
+          <p style="padding-left: 10px; opacity: 0.8;">
+            You are 
+          </p>
+          <p id="bottomUsername">
+            Username
+          </p>
+          <a href="https://maiadigital.co.uk/faq.html" target="_blank">
+            <img
+              class="ingameIcon"
+              id="bottopFAQ"
+              src="https://cdn.glitch.com/b82bb398-3ada-4af4-8aa4-d21adf3a10b0%2FInformation%20icon.png?v=1610373853566"
+              title="Open FAQs"
+              crossorigin="anonymous"
+            />
+          </a>
         </div>
         <img
           id="VRButton"
           class="ingameIcon"
           title="Enter VR Mode"
-          src="https://cdn.glitch.com/60e19993-0614-48b3-9be5-69649f6f5b68%2FVRFilled.png?v=1593617080483"
+          src="https://cdn.glitch.com/f44e7d0f-6299-4434-a136-b24515e92365%2FVR.png?v=1603642471053"
           crossorigin="anonymous"
         />
       </div>
@@ -1098,7 +1132,7 @@
           <img
             class="ingameIcon"
             id="chatIcon"
-            src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ficon-chat.png?v=1592505880783"
+            src="https://cdn.glitch.com/f44e7d0f-6299-4434-a136-b24515e92365%2Fchat%20icon.png?v=1603642470653"
             crossorigin="anonymous"
           />
           <input class="input" id="chatBox" placeholder="Here to chat!" />
@@ -1110,7 +1144,7 @@
             id="FSbutton"
             class="UIbutton"
             title="Enter Fullscreen Mode"
-            src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ffullscreen.png?v=1592571348624"
+            src="https://cdn.glitch.com/f44e7d0f-6299-4434-a136-b24515e92365%2Ffullscreen.png?v=1603642470542"
             onclick="toggleFullScreen()"
             crossorigin="anonymous"
           />
@@ -1137,74 +1171,98 @@
         <div id="bottomCorner">
           <img
             id="ingameLogo"
-            src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Fph706logo.png?v=1592505899220"
+            src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Flogo.png?v=1613323696603"
             crossorigin="anonymous"
           />
-          <img
-            class="ingameIcon"
-            id="botbottomIcon"
-            src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ficon-bot.png?v=1592505881199"
-            crossorigin="anonymous"
-          />
-          <p id="bottomUsername">
-            Username
-          </p>
         </div>
       </div>
-
+          
       <div id="enter">
-        <div id="enterMenu">
-          <div id="enterBack"></div>
+        
+        <div id="circleBack" class="circleBack">
           <img
-            id="logoEnter"
-            src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Fneon%20logo2.png?v=1592505914123"
+            id="circleLeft"
+            class="circles circleLeft" 
+            src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Ftransparent%20blue.png?v=1613320446039"
             crossorigin="anonymous"
           />
-          <!--<h1 id="title">
-            PH706
-          </h1>
-          <h1 id="subtitle">
-            WELCOME BOTS...
-          </h1>-->
-
+          <img
+            id="circleRight"
+            class="circles circleRight"
+            src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Ftransparent%20white.png?v=1613320446297"
+            crossorigin="anonymous"
+          />
+        </div>
+        
+        <div id="circleFront" class="circleBack">
+          
+          <img
+            id="circleRightFront"
+            class="circlesFront circleRight"
+            src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Fsolid%20blue.png?v=1613320445771"
+            crossorigin="anonymous"
+          />
+          <img
+            id="circleLeftFront"
+            class="circlesFront circleLeft" 
+            src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2FlogoMADDlounge.png?v=1613335193038"
+            crossorigin="anonymous"
+          />
+        </div>
+        
+        <div id="circleRightContent" class="circlesFront circleRight">
+          <img
+            id="logoEnter"
+            src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Flogo.png?v=1613323696603"
+            crossorigin="anonymous"
+          />
+          <p id="enterDescription">
+            Welcome to the LIDGO (Laser Interferometer Digital Gravitational-Wave Observatory) Lounge. This space will be open for the entirety of the MA Digital Direction final show “Gravitational Wave Memory,” running from 17-21 February. The LIDGO Lounge allows you to interact with your fellow guests, dance and break the conventions of physically-bound socializing (there’s no gravity in digital space, after all)
+            <br>
+            <br>
+            The LIDGO Lounge afterparty celebrates the kick-off of five days of events, workshops and talks. Have fun while you’re here and don’t forget to come back! You never know who will be floating around.
+            <br>
+            <br>
+            The LIDGO Lounge was built by MAIA Digital World, a group of Digital Direction students whose work is on display at the Gravitational Wave Memory website.
+          </p>
           <div id="instructions">
-            <img
-              class="iconEnter"
-              id="headphoneIcon"
-              src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ferji-4.png?v=1592505881145"
-              crossorigin="anonymous"
-            />
-            <p>
-              Please enter with <b>Chrome</b> or <b>Firefox</b> and use
-              earphones/headphones
-            </p>
-            <img
+                        
+            <div class="instructionInline">
+              <img
               class="iconEnter"
               id="arrowIcon"
-              src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Fdaohang.png?v=1592505880553"
+              src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Fnavigate%20icon.png?v=1613320444348"
               crossorigin="anonymous"
-            />
-            <p>
-              Use <b>W, S, A, D keys</b> (or arrow keys) <br />and mouse to
-              navigate
-            </p>
-            <img
+              />
+              <img class="textInstruction" src="https://cdn.glitch.com/b82bb398-3ada-4af4-8aa4-d21adf3a10b0%2FUse%20W.S.A.D%20keys%20(or.png?v=1609585697822"/>
+            </div>
+            
+            <div class="instructionInline">
+              <img
               class="iconEnter"
               id="micIcon"
-              src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ficon-unmute22.png?v=1592514789081"
+              src="https://cdn.glitch.com/b82bb398-3ada-4af4-8aa4-d21adf3a10b0%2F%E7%BC%96%E7%BB%84.png?v=1609585445026"
               crossorigin="anonymous"
-            />
-            <p>
-              Please allow the microphone upon request from the browser, so that
-              you can talk with others
-            </p>
+              />
+              <img class="textInstruction" src="https://cdn.glitch.com/b82bb398-3ada-4af4-8aa4-d21adf3a10b0%2FPlease%20allow%20the%20mic.png?v=1609585697666"/>
+            </div>
+            
+            <div class="instructionInline">
+              <img
+              class="iconEnter"
+              id="headphoneIcon"
+              src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Fchrom%20icon.png?v=1613320443966"
+              crossorigin="anonymous"
+              />
+              <img class="textInstruction" src="https://cdn.glitch.com/b82bb398-3ada-4af4-8aa4-d21adf3a10b0%2FPlease%20enter%20with%20Ch.png?v=1609585697725"/>
+            </div>
+            
           </div>
-
           <div id="enterName">
             <input
               id="firstUsername"
               class="enterContent"
-              placeholder="Write your Username here!"
+              placeholder="Display Name"
               tabindex="1"
             />
             <button
@@ -1212,9 +1270,17 @@
               class="enterContent"
               onclick="changeUsernameFirst()"
             >
-              To party!
+              ENTER
             </button>
           </div>
+        </div>
+        
+        <!--<div id="enterMenu">
+          <div id="enterBack"></div>
+          
+                  
+
+          
         </div>
         <a href="https://www.instagram.com/ph7.0.6/" target="_blank">
           <img
@@ -1222,10 +1288,14 @@
             src="https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Finstagram-3.png?v=1592566394569"
             crossorigin="anonymous"
           />
-        </a>
+        </a>-->
       </div>
+      
     </div>
 
+    
+    
+    
     <!--<script>
     
       document.getElementById('centerPiece').addEventListener('loaded', function () {
@@ -1309,6 +1379,7 @@
     <script>
       let button = document.getElementById("myButton");
       let icon = document.getElementById("muteIcon");
+      let micBack = document.getElementById('muteBack');
       let audiortc = 1;
 
       function toggleMic() {
@@ -1318,14 +1389,16 @@
           console.log(audiortc);
           button.innerHTML = "Unmute";
           icon.src =
-            "https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ficon-mute.png?v=1592505880753";
+            "https://cdn.glitch.com/f44e7d0f-6299-4434-a136-b24515e92365%2Fmaikefeng-jingyin-2.png?v=1603802144461";
+          micBack.style.display = "none";
         } else {
           easyrtc.enableMicrophone(true);
           audiortc = 1;
           console.log(audiortc);
           button.innerHTML = "Mute";
           icon.src =
-            "https://cdn.glitch.com/0e65d536-0425-4e6e-8059-1247674b938e%2Ficon-unmute.png?v=1592505881505";
+            "https://cdn.glitch.com/f44e7d0f-6299-4434-a136-b24515e92365%2Fmaikefeng-2.png?v=1603802144461";
+          micBack.style.display = "block";
         }
       }
     </script>
@@ -1355,7 +1428,7 @@
         uitop.style.display = "flex";
         uibottom.style.display = "flex";
 
-        toggleMic();
+        //toggleMic();
       }
 
       function changeUsername() {
@@ -1466,5 +1539,28 @@
         }
       }
     </script>
+    
+    <script>
+    
+    let scene = document.querySelector('a-scene');
+      
+    if (scene.hasLoaded) {
+      run();
+    } else {
+      scene.addEventListener('loaded', run);
+    } 
+      
+      
+    function run(){
+        
+        window.setTimeout(function(){
+          toggleMic();
+        }, 2000);
+    }
+    
+    
+    
+    </script>
+    
   </body>
 </html>
