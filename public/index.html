@@ -255,9 +255,9 @@
 
             <audio
               id="music1"
-              src="https://cdn.glitch.com/66d062e6-6fc1-4375-8ef6-734bb7747aaf%2Flounge%20music.mp3?v=1613399311947"
+              src="https://cdn.glitch.com/3caaeeee-606a-4efa-b25c-25fd7df67760%2Ftribal%20tessellation%20-%20Santra_redux4.mp3?v=1594466148569"
             ></audio>
-            <!--<audio
+            <audio
               id="music2"
               src="https://cdn.glitch.com/3caaeeee-606a-4efa-b25c-25fd7df67760%2FApril-Xanadu_redux2.mp3?v=1594466006077"
             ></audio>
@@ -272,7 +272,7 @@
             <audio
               id="musicentrance"
               src="https://cdn.glitch.com/83db13bb-2e50-4db4-ae15-d23dcb891201%2F208516__frankum__entrancemod.mp3?v=1592321706740"
-            ></audio>-->
+            ></audio>
           </a-assets>
 
           <a-entity
@@ -328,7 +328,7 @@
           ></a-entity>
 
           <a-sky
-            
+            src="#sky"
             rotation="0 -90 0"
             segments-height="10"
             segments-width="16"
@@ -405,7 +405,7 @@
             ></a-cylinder>
 
             <a-entity
-              text="value: WELCOME TO THE LOUNGE!\nMusic by Muted Affair; width: 10; color: white; align: center"
+              text="value: ENJOY THE PARTY!; width: 10; color: white; align: center"
               position="0 6 0.8"
             ></a-entity>
 
@@ -414,9 +414,9 @@
               scale="10 0.5 10"
               rotation="90 0 0"
               visible="false"
-              sound="src: #music1; 
+              sound="src: #musicentrance; 
                     autoplay: true;
-                    volume: 0.2;
+                    volume: 1;
                     loop: true;
                     refDistance: 30;
                     rolloffFactor: 10"
@@ -497,9 +497,9 @@
               scale="10 0.5 10"
               rotation="90 0 0"
               visible="false"
-              sound="src: #music1; 
+              sound="src: #musicentrance; 
                     autoplay: true;
-                    volume: 0.4;
+                    volume: 1;
                     loop: true;
                     refDistance: 30;
                     rolloffFactor: 10"
@@ -628,18 +628,18 @@
               animation__2="property: components.material.material.emissiveIntensity; from: 0; to: 20; dur: 10000; loop: true; dir: alternate"
             ></a-box>
 
-            <!--<a-sphere
+            <a-sphere
               radius="30"
               position="0 5 -10"
               visible="false"
-              sound="src: #music1; 
+              sound="src: #center1; 
                     autoplay: true;
                     volume: 1;
                     loop: true;
                     refDistance: 20;
                     rolloffFactor: 10"
             >
-            </a-sphere>-->
+            </a-sphere>
           </a-entity>
 
           <!--1-->
@@ -724,7 +724,7 @@
               visible="false"
               sound="src: #music1; 
                     autoplay: true;
-                    volume: 0.4;
+                    volume: 1;
                     loop: true;
                     refDistance: 20;
                     rolloffFactor: 10"
@@ -754,7 +754,7 @@
               material="shader: gif; src: url(https://media.giphy.com/media/SJmXCNIzH7FuJyhptM/giphy.gif); opacity: 0.5;"
             ></a-plane>
             
-            <!--<a-image src="#posterSantra" width="7.4" height="10" position="-20 13 -28.5" rotation="0 110 0"></a-image>-->
+            <a-image src="#posterSantra" width="7.4" height="10" position="-20 13 -28.5" rotation="0 110 0"></a-image>
             
           </a-entity>
 
@@ -875,9 +875,9 @@
               radius="30"
               position="0 5 -10"
               visible="false"
-              sound="src: #music1; 
+              sound="src: #music2; 
                     autoplay: true;
-                    volume: 0.4;
+                    volume: 1;
                     loop: true;
                     refDistance: 20;
                     rolloffFactor: 10"
@@ -906,7 +906,7 @@
               rotation="-90 0 0"
               material="shader: gif; src: url(https://media.giphy.com/media/l9UZwz7fhHzkJkAqJ7/giphy.gif); opacity: 0.5;"
             ></a-plane>
-            <!--<a-image src="#posterApril" width="7.4" height="10" position="20 13 -28.5" rotation="0 -110 0"></a-image>-->
+            <a-image src="#posterApril" width="7.4" height="10" position="20 13 -28.5" rotation="0 -110 0"></a-image>
           </a-entity>
 
           <!--3-->
@@ -989,9 +989,9 @@
               radius="30"
               position="0 5 -10"
               visible="false"
-              sound="src: #music1; 
+              sound="src: #music3; 
                     autoplay: true;
-                    volume: 0.4;
+                    volume: 1;
                     loop: true;
                     refDistance: 20;
                     rolloffFactor: 10"
@@ -1020,7 +1020,7 @@
               rotation="-90 0 0"
               material="shader: gif; src: url(https://media.giphy.com/media/xUPGclQpYBf08HmIIE/giphy.gif); opacity: 0.5;"
             ></a-plane>
-            <!--<a-image src="#posterMia" width="7.4" height="10" position="-24 13 10" rotation="0 90 0"></a-image>-->
+            <a-image src="#posterMia" width="7.4" height="10" position="-24 13 10" rotation="0 90 0"></a-image>
           </a-entity>
 
           <!-- EXIT -->
@@ -1070,7 +1070,6 @@
           Please change the direction<br>of your device to landscape mode.
         </p>
       </div>
-      
 
       <div id="ingameUItop">
         <!--<button id="myButton">Mute!</button> -->
@@ -1176,7 +1175,9 @@
           />
         </div>
       </div>
-          
+      
+      
+
       <div id="enter">
         
         <div id="circleBack" class="circleBack">
@@ -1383,6 +1384,7 @@
       let audiortc = 1;
 
       function toggleMic() {
+        //console.log('toggleMic');
         if (audiortc === 1) {
           easyrtc.enableMicrophone(false);
           audiortc = 0;
